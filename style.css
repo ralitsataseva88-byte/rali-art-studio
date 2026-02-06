@@ -116,3 +116,68 @@ nav a:hover {
   color: var(--muted);
   border-top: 1px solid var(--border);
 }
+/* ========================= */
+/* MOBILE RESPONSIVE FIX */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* NAVIGATION */
+  header.nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 16px;
+    gap: 18px;
+  }
+
+  header.nav nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  header.nav nav a {
+    font-size: 14px;
+    letter-spacing: 2px;
+    opacity: 0.8;
+  }
+
+  /* HERO SECTION */
+  .hero {
+    padding: 80px 18px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+    line-height: 1.15;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  /* GENERAL SECTION SPACING */
+  section {
+    padding: 60px 18px;
+  }
+
+  /* GRID FIX FOR PRODUCTS */
+  .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  /* IMAGES */
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 14px;
+  }
+
+}
